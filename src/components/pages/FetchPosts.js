@@ -9,13 +9,17 @@ const FetchPosts = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(10);
 
-  // 21,21....30
-
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage; //  4
   const currentPagePosts = posts.slice(firstPostIndex, lastPostIndex);
 
   const paginate = useCallback((pageNumber) => setCurrentPage(pageNumber), []);
+
+  useEffect(() => {
+    if (currentPage > Math.floor(posts.length / postsPerPage)) {
+      setCurrentPage(1);
+    }
+  }, [postsPerPage, currentPage, posts.length]);
 
   useEffect(() => {
     async function fetchPosts() {
@@ -39,6 +43,14 @@ const FetchPosts = () => {
       <div className="formContainer" style={{ width: "500px" }}>
         <h1>Posts</h1>
         <hr />
+        <div className="postPerPage">
+          <span>Posts per Page : </span>
+          <input
+            type="number"
+            value={postsPerPage}
+            onChange={(e) => setPostsPerPage(e.target.value)}
+          />
+        </div>
         {currentPagePosts.length <= 0 ? (
           <h4>Loading Posts...</h4>
         ) : (

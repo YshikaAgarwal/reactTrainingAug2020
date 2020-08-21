@@ -20,6 +20,13 @@ input {
   padding: 10px 25px;
 }
 
+input[type="number"] {
+  margin: 10px 0;
+  padding: 5px 10px;
+  width: 50px;
+  outline: none;
+}
+
 button {
   padding: 10px 25px;
   border-radius: 33px;
@@ -48,4 +55,11 @@ button {
 .pagination span.active {
   background-color: #333;
   color: #fff;
+}
+
+.postPerPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
 }
