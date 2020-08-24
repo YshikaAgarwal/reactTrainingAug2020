@@ -18,6 +18,7 @@
 input {
   margin: 10px 0;
   padding: 10px 25px;
+  outline: none;
 }
 
 input[type="number"] {
@@ -62,4 +63,54 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-right: 30px;
+}
+
+.treeContainer {
+  min-height: 75%;
+  min-width: 75%;
+  border-radius: 10px;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.formSection {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.todoItem {
+  margin: 0 20px;
+}
+
+.todoItem input[type="checkbox"] {
+  transform: scale(2);
+}
+
+.todoItem input {
+  margin-right: 15px;
+  outline: none;
+  border: none;
+}
+
+.todoInputContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.todoInputContainer button {
+  position: absolute;
+  padding: 10px;
+  right: 8%;
+  top: 25%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130%;
 }
