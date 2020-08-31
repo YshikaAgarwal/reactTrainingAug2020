@@ -10,6 +10,7 @@ import GlobalPage from "./components/global/GlobalPage";
 import LoginPage from "./components/login/LoginPage";
 import TodoApp from "./components/TodoApp";
 import Header from "./components/layout/Header";
+import FormRef from "./components/formRefs";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/global" component={GlobalPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/todo" component={TodoApp} />
+        <Route exact path="/form" component={FormRef} />
       </Switch>
     </Router>
   );

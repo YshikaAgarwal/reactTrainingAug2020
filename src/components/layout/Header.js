@@ -10,6 +10,7 @@ const Header = () => {
     { id: 3, url: "/global", label: "useContext" },
     { id: 4, url: "/login", label: "LoginForm" },
     { id: 5, url: "/todo", label: "TodoApp" },
+    { id: 6, url: "/form", label: "FormRef" },
   ];
 
   return (
