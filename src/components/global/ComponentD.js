@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { CountContext } from "../pages/GlobalPage";
+import { CountContext } from "./GlobalPage";
 
 const ComponentD = () => {
   const { count, incCount, decCount } = useContext(CountContext);

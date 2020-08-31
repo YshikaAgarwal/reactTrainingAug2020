@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
-import Pagination from "../Pagination";
+import Pagination from "./Pagination";
 import { Link } from "react-router-dom";
 
 const FetchPosts = () => {

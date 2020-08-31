@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ComponentC from "./ComponentC";
 
-import { CountContext } from "../pages/GlobalPage";
+import { CountContext } from "./GlobalPage";
 
 const ComponentB = () => {
   const { count } = useContext(CountContext);

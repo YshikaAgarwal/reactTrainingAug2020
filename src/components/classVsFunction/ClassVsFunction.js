@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ClassForm from "../ClassForm";
-import FunctionForm from "../FunctionForm";
+import ClassForm from "./ClassForm";
+import FunctionForm from "./FunctionForm";
 
-const Home = () => {
+const ClassVsFunction = () => {
   const [display, setDisplay] = useState(true);
   const [display2, setDisplay2] = useState(true);
 
@@ -31,4 +31,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ClassVsFunction;

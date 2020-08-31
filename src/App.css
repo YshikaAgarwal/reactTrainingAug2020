@@ -1,18 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   margin: 0 25px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
 }
 
 .formContainer {
   width: 300px;
   margin: auto;
+  margin-top: 2rem;
   background: #dedede;
   border-radius: 10px;
   min-height: 75vh;
   padding: 10px;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container h1,
+.container h2 {
+  color: hsl(360, 60%, 30%);
 }
 
 input {
@@ -24,7 +44,7 @@ input {
 input[type="number"] {
   margin: 10px 0;
   padding: 5px 10px;
-  width: 50px;
+  width: 100px;
   outline: none;
 }
 
@@ -33,10 +53,11 @@ button {
   border-radius: 33px;
   outline: none;
   border: none;
-  background: blue;
+  background: hsl(360, 50%, 50%);
   cursor: pointer;
   color: #fff;
   font-weight: bold;
+  margin: 0.6rem;
 }
 
 .pagination {
@@ -46,7 +67,7 @@ button {
 
 .pagination span {
   padding: 5px 10px;
-  border: 1px solid #333;
+  border: 1px solid hsl(360, 50%, 50%);
   margin-right: 10px;
   cursor: pointer;
   margin-bottom: 10px;
@@ -54,7 +75,7 @@ button {
 
 .pagination span:hover,
 .pagination span.active {
-  background-color: #333;
+  background-color: hsl(360, 50%, 50%);
   color: #fff;
 }
 
@@ -70,6 +91,7 @@ button {
   min-width: 75%;
   border-radius: 10px;
   padding: 20px 50px;
+  margin: 1rem 0;
   text-align: center;
 }
 
@@ -104,8 +126,8 @@ button {
 .todoInputContainer button {
   position: absolute;
   padding: 10px;
-  right: 8%;
-  top: 25%;
+  right: 5%;
+  top: 5%;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -113,4 +135,35 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 130%;
+}
+
+header {
+  background: hsl(360, 50%, 50%);
+  padding: 0 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .heading {
+  color: #fff;
+}
+
+.navbar .nav {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1.2rem 0;
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  padding: 1.2rem 0.8rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: hsl(360, 50%, 90%);
+  color: hsl(360, 50%, 50%);
 }
